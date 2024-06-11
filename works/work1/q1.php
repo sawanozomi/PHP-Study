@@ -8,8 +8,6 @@ $num = 11;
 
 if ($num > 10) {
     echo "numは10より大きいです\n";
-}
-
-if ($num < 10) {
+} elseif ($num < 10) {
     echo "numは10より小さいです\n";
 }
