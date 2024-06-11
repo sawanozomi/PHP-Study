@@ -8,11 +8,7 @@ for ($i = 0; $i < 10; $i++) {
     echo "$i\n";
 }
 
-// 2重ループ
-for ($i = 0; $i < 10; $i++) {
-    for ($j = 0; $j < 10; $j++) {
-    }
-}
+
 
 
 $array = array('Sun', 'Mon', 'Tue');
