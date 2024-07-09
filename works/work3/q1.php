@@ -2,8 +2,9 @@
 
 // 引数として受け取った数値を2倍にして返す関数を完成させなさい。
 
-double();
+double(50);
 
-function double()
+function double($double)
 {
+    echo $double * 2;
 }
