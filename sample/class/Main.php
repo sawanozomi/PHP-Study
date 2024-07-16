@@ -15,6 +15,7 @@ $mainUser->setAge(30);
 showUserStatus($mainUser);
 showUserStatus($subUser);
 
+
 function showUserStatus($user) {
     echo "========ユーザー情報========" ."\n";
     echo "ID: ".$user->getId()."\n";

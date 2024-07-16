@@ -12,7 +12,9 @@ class Gun {
 
     // コンストラクタ
     function __construct($name, $maxMagazine) {
-        // 問題1
+    $this-> name = $name;
+    $this -> maxMagazine = $maxMagazine;
+    $this->currentMagazine= 0;
     }
 
     // 現在の状態を表示
@@ -25,13 +27,18 @@ class Gun {
     }
 
     // リロード
-    function relaod() {
-        // 問題2
+    function reload() {
+        if($this->currentMagazine >=$this->maxMagazine){
+            echo "リロードの必要はありません\n";
+            return;
+        } 
+
+        $this->currentMagazine = $this->maxMagazine;
     }
 
     // 発砲
     function fire() {
-        // 問題3
+            $this->currentMagazine = $this->currentMagazine - 1;
     }
 
     // 拡張マガジンを装着
