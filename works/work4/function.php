@@ -1,5 +1,6 @@
 <?php
 // 関数1
+
 function readBooksData()
 {
     $filename = './books.csv';
@@ -13,16 +14,24 @@ function readBooksData()
 
         // 行ごとに読み込んで連想配列に変換
         while (($data = fgetcsv($file, 1000, ',')) !== FALSE) {
-            $book = array();
+            $book = array(
+                $header[0] => $data[0],
+                $header[1] => $data[1],
+                $header[2] => $data[2],
+            );
             // TODO:ここでループを使ってデータを連想配列に変換
+            array_push($books,$book);
 
-            // print_r($data); <- これで$dataの中身を確認できる。
+             //print_r($data); //<- これで$dataの中身を確認できる。
+              
         }
+       
 
         fclose($file);
 
         // 結果を返却
         return $books;
+        
     } else {
         echo "ファイルを開けませんでした。";
     }
@@ -31,6 +40,7 @@ function readBooksData()
 // 関数2
 function calcTax($books)
 {
+    
 }
 
 // 関数3

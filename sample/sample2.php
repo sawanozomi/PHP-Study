@@ -14,10 +14,10 @@ for ($i = 0; $i < 10; $i++) {
     }
 }
 
-$array = array('Sun', 'Mon', 'Tue');
-echo $array[0];    // Sun が出力される
-echo $array[1];    // Mon が出力される
-echo $array[2];    // Tue が出力される
+$array = array();
+// echo $array[0];    // Sun が出力される
+// echo $array[1];    // Mon が出力される
+// echo $array[2];    // Tue が出力される
 
 // 名前(キー)付き配列
 $array['Sun'] = 'Sunday';
